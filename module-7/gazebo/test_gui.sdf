@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<sdf version="1.8">
+  <world name="test">
+    <gui fullscreen="0">
+      <plugin filename="VisualizeLidar" name="Visualize Lidar"></plugin>
+    </gui>
+  </world>
+</sdf>
