@@ -120,5 +120,130 @@
         </visual>
       </link>
     </model>
+    <!-- Simple Custom Maze -->
+    <model name="simple_maze">
+      <static>true</static>
+      
+      <!-- North Wall (Left Part) -->
+      <link name="wall_north_left">
+        <pose>-2 3 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- North Wall (Right Part) -->
+      <link name="wall_north_right">
+        <pose>2 3 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- South Wall (Left Part) -->
+      <link name="wall_south_left">
+        <pose>-2 -3 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- South Wall (Right Part) -->
+      <link name="wall_south_right">
+        <pose>2 -3 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- East Wall (Top Part) -->
+      <link name="wall_east_top">
+        <pose>3 1.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>0.2 3 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 3 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- East Wall (Bottom Part) -->
+      <link name="wall_east_bottom">
+        <pose>3 -2.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>0.2 1 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 1 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- West Wall (Top Part) -->
+      <link name="wall_west_top">
+        <pose>-3 2.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>0.2 1 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 1 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- West Wall (Bottom Part) -->
+      <link name="wall_west_bottom">
+        <pose>-3 -1.5 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>0.2 3 1</size></box></geometry>
+          <material><ambient>0.5 0.5 0.5 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 3 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- Inner Obstacle 1 -->
+      <link name="obstacle_1">
+        <pose>1 1 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>2 0.2 1</size></box></geometry>
+        </collision>
+      </link>
+
+      <!-- Inner Obstacle 2 -->
+      <link name="obstacle_2">
+        <pose>-1 -1 0.5 0 0 0</pose>
+        <visual name="visual">
+          <geometry><box><size>0.2 2 1</size></box></geometry>
+          <material><ambient>0.8 0.2 0.2 1</ambient></material>
+        </visual>
+        <collision name="collision">
+          <geometry><box><size>0.2 2 1</size></box></geometry>
+        </collision>
+      </link>
+    </model>
+
   </world>
 </sdf>

@@ -76,7 +76,8 @@ def generate_launch_description():
         package='gazebo_control',
         executable='diffdrive_pid',
         name='diffdrive_pid',
-        output='screen'
+        output='screen',
+        parameters=[{'use_sim_time': True}]
     )
 
     # 8. Start RViz2 with a saved configuration file
