@@ -15,7 +15,7 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob(os.path.join('launch', '*launch.[pxy][yma]*'))),
         (os.path.join('share', package_name, 'urdf'), glob(os.path.join('urdf', '*.urdf'))),
         (os.path.join('share', package_name, 'worlds'), glob(os.path.join('worlds', '*.sdf'))),
-        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.yaml'))),
+        (os.path.join('share', package_name, 'config'), glob(os.path.join('config', '*.[y|r]*'))),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -30,6 +30,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'diffdrive_pid = gazebo_control.diffdrive_pid:main',
         ],
     },
 )

@@ -71,10 +71,30 @@ def generate_launch_description():
         output='screen'
     )
 
+    # 7. Start the PID Controller Node
+    pid_controller = Node(
+        package='gazebo_control',
+        executable='diffdrive_pid',
+        name='diffdrive_pid',
+        output='screen'
+    )
+
+    # 8. Start RViz2 with a saved configuration file
+    rviz_config_file = os.path.join(pkg_gazebo_control, 'config', 'my_robot.rviz')
+    rviz = Node(
+        package='rviz2',
+        executable='rviz2',
+        name='rviz2',
+        arguments=['-d', rviz_config_file],
+        output='screen'
+    )
+
     return LaunchDescription([
         gz_sim,
         robot_state_publisher,
         spawn_robot,
         bridge,
-        static_tf
+        static_tf,
+        pid_controller,
+        rviz
     ])
