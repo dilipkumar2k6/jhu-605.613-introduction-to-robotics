@@ -219,30 +219,6 @@
           <geometry><box><size>0.2 3 1</size></box></geometry>
         </collision>
       </link>
-
-      <!-- Inner Obstacle 1 -->
-      <link name="obstacle_1">
-        <pose>1 1 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>2 0.2 1</size></box></geometry>
-          <material><ambient>0.8 0.2 0.2 1</ambient></material>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>2 0.2 1</size></box></geometry>
-        </collision>
-      </link>
-
-      <!-- Inner Obstacle 2 -->
-      <link name="obstacle_2">
-        <pose>-1 -1 0.5 0 0 0</pose>
-        <visual name="visual">
-          <geometry><box><size>0.2 2 1</size></box></geometry>
-          <material><ambient>0.8 0.2 0.2 1</ambient></material>
-        </visual>
-        <collision name="collision">
-          <geometry><box><size>0.2 2 1</size></box></geometry>
-        </collision>
-      </link>
     </model>
 
   </world>
