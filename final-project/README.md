@@ -45,8 +45,9 @@ Students will give a short 5 minute presentation to the class covering their app
 You are free to alter the robot in any way you need or introduce elements into the gazebo world to aid in localization. You may not edit the map itself and you may not use third-party packages without instructor approval.
 
 **All Students must submit:**
-3. All source code.
-4. 1-2 page document explaining the approach, and how to run the code. Please include any information such as run environment or other package dependencies.
-5. Videos of the robot in action executing 2 of the 4 scenarios defined by the `README.md` file.
-6. Video of the student giving the presentation
-7. Slides used for the class presentation.
+
+1. All source code.
+2. 1-2 page document explaining the approach, and how to run the code. Please include any information such as run environment or other package dependencies.
+3. Videos of the robot in action executing 2 of the 4 scenarios defined by the `README.md` file.
+4. Video of the student giving the presentation
+5. Slides used for the class presentation.
